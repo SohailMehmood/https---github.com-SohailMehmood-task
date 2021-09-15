@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+
+    <!-- Favicon -->
+  <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png" />
+</head>
+<body>
+    <!-- start of table -->
+    <table>
+        <thead>
+            <!-- titles for table columns -->
+            <tr>
+                <th>
+                    API Name
+                </th>
+                <th>
+                    API Description
+                </th>
+                <th>
+                    Test Run
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- first API -->
+            <tr>
+                <td>
+                    1: Find Nearby Postal Codes
+                </td>            
+                <td>
+                    Returns next closest postcode from postcode entered.<br><br>
+                    <label for="postcode">Postcode:</label>
+                    <input type="text" id="firstPostalcode" name="postcode" value="PE37LN">
+                    <label for="country">Country:</label>
+                    <input type="text" id="firstCountry" name="country" value="GB">
+                </td>
+                <td>
+                    <button id="firstRun" type="button">Run</button>
+                </td>
+            </tr><br>
+            <tr>
+                <!-- second API -->
+                <td>
+                    2: Postal Code Search
+                </td>
+                <td>
+                    Returns first full postcode from first part of postcode entred.<br><br>
+                    <label for="postcode">Postcode:</label>
+                    <input type="text" id="secondPostalcode" name="postcode" value="CF11">
+                    <label for="country">Country:</label>
+                    <input type="text" id="secondCountry" name="country" value="GB">
+                </td>
+                <td>
+                    <button id="secondRun" type="button">Run</button>
+                </td>
+            </tr><br>
+            <tr>
+                <!-- third API -->
+                <td>
+                    3: Placename Lookup From Post Code
+                </td>
+                <td>
+                    Returns name of city from postcode entered.<br><br>
+                    <label for="postcode">Postcode:</label>
+                    <input type="text" id="thirdPostalcode" name="postcode" value="NG1">
+                    <label for="country">Country:</label>
+                    <input type="text" id="thirdCountry" name="country" value="GB">
+                </td>
+                <td>
+                    <button id="thirdRun" type="button">Run</button>
+                </td>
+            </tr>
+            <!-- results displayed here -->
+            <tr>
+                <td colspan=3>  
+                    Results:<br><br>                            
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    City:
+                </td>
+                <td colspan="2" id="txtCity">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    State:
+                </td>
+                <td colspan="2" id="txtState">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Country:
+                </td>
+                <td colspan="2" id="txtCountry">
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Postcode:
+                </td>
+                <td colspan="2" id="txtPostcode">
+
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>
+
+    <!-- javascript file links -->
+    <script type="application/javascript" src="libs/js/jquery-3.6.0.min.js"></script>
+    <script type="application/javascript" src="libs/js/script.js"></script>
+    
+</body>
+</html>
